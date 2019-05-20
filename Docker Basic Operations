@@ -1,0 +1,28 @@
+Docker Installation on ubuntu:
+
+Step 1: Open Terminal and type command sudo apt-get update
+Step 2: Then type following command sudo apt-get install docker.io
+Step 3: To check whether the Docker is installed or not and for checking the docker version.
+
+Common Operations.
+
+1. 	docker --version // To check the version of the docker.
+2. 	sudo docker pull ubuntu // To pull ubuntu 
+3. 	sudo docker images // To see existing images
+4. 	sudo docker run -it -d ubuntu // -it means make terminal interactive and -d run the ubuntu as demon i.e. run in the background
+5. 	sudo docker ps // Shows the container which is running
+6. 	sudo docker stop cc1d387bf994 // Container ID
+7. 	sudo docker ps -a // Shows the all containers which are running or stopped.
+8.	sudo docker ps // To get the container ID
+9. 	sudo docker exec -it 7e5775e52770 bash // To get into the container. and bash is the same terminal access. We will be inside the 		containers os i.e. Ubuntu. 
+10.	exit // to exit the container.
+11. 	sudo docker kill container id // To kill i.e. to shutdown forcefully.
+12.	sudo docker rm container id // To remove the container.
+13.	sudo docker rm -f container id // To remove running container
+14. 	sudo docker rmi image id // To remove the image.
+15.	sudo docker commit <container id> <new_name> // To create new custome image and save changes to it.
+16.	sudo docker run -it -d <image_name> // To run the custom image.
+17 	sudo docker rm -f $(sudo docker ps -a -q) // To remove all the container present in our system.
+	Flag -p i.e. port mapping -p 82:80 linking port 82 to port 80 of container.
+18.	sudo docker login // To login in docker hub through command line.
+19.	sudo docker push akshaykashid13/apache // To push the custome container to the docker hub.
