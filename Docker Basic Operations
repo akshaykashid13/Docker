@@ -14,7 +14,7 @@ Common Operations.
 6. 	sudo docker stop cc1d387bf994 // Container ID
 7. 	sudo docker ps -a // Shows the all containers which are running or stopped.
 8.	sudo docker ps // To get the container ID
-9. 	sudo docker exec -it 7e5775e52770 bash // To get into the container. and bash is the same terminal access. We will be inside the 		containers os i.e. Ubuntu. 
+9. 	sudo docker exec -it 7e5775e52770 bash // To get into the container. and bash is the same terminal access. We will be inside the containers os i.e. Ubuntu. 
 10.	exit // to exit the container.
 11. 	sudo docker kill container id // To kill i.e. to shutdown forcefully.
 12.	sudo docker rm container id // To remove the container.
